@@ -6,7 +6,7 @@ public class TipCalculatoRunner {
         int people;
         double bill;
         double tipPercent;
-        double totalTip = get;
+        double totalTip =;
         // These variables will store the data based on the user's input to the number of people, tip, and the initial bill.
 
 
@@ -20,13 +20,13 @@ public class TipCalculatoRunner {
 
         people = scan.nextInt();
 
-        TipCalculator tip = new TipCalculator();
+        TipCalculator tip = new TipCalculator(people,bill);
 
         System.out.println("What is the tip percentage that you would like to pay");
 
-        totalTip = scan.nextInt();
+        totalTip = scan.nextDouble();
 
-        totalTip = bill * (tipPercent);
+        System.out.println("Your total bill before tip is" tip.getTotalBillBeforeTip());
 
         double totalBill = bill + totalTip;
 
